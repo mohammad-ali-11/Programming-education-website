@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="vendor/font awesome 5/font awesome 5 all.min.css">
+   
+    <link rel="stylesheet" href="vendor/SwiperSlider/swiper.css">
+
+    <title>Document</title>
+</head>
+
+<body class="font-Dana bg-gray-50">
+    <header>
+        <!-------Top Bar Header-->
+        <div class="topbar-header ">
+                <!-------TopBor Right-->
+            <div class="top-bar__item  ">        
+            </div>
+                <!-------TopBor Left-->
+            <div class="top-bar__left hidden xl:flex">
+                <div>
+                    <a href="#" class="text-xl lg:text-2xl">sabzlear@gmail.com</a>
+                    <i class="fas fa-envelope top-bar__icon"></i>
+                </div>
+                <div>
+                    <a href="#" class="text-xl lg:text-2xl ">0913677349</a>
+                    <i class="fas fa-phone top-bar__icon"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!---- Header-->
+        <div class=" main-header  ">
+            <!----Header Right-->
+                <div class="flex items-center "> 
+                <!--logo-->
+                <img class=" h-16 xl:h-18 " src="./imeges/logo/Logo.png" alt=""> 
+                <!---menu-->
+                <ul class="main-header__menu" id="menus-wrapper">
+                    <li>
+                        <a href="index.html" class="">صفحه اصلی</a>
+                    </li> 
+                    <!-- Dom watch js -->     
+                </ul>
+            </div> 
+            <!----Header Left--->
+                <div class="main-header__left hidden  lg:flex "> 
+                <!---icon search-->
+                <a href="#" class="main-header__search-btn ">
+                    <i class="fas fa-search "></i>
+                </a>
+                <!---icon shopping-->
+                <a href="#" class="main-header__cart-btn ">
+                    <i class="fas fa-shopping-cart "></i>
+                </a> 
+                <!-----profile-->
+                <a href="#"  class="main-header__profile group" id="main-header__profile-id">
+                    <!-- <span class="main-header__profile-text">محمد علی خسروی</span> -->
+                </a>
+            </div>
+        </div> 
+        <!-- mobile Header -->
+        <div class="main-mobile-Header ">
+            <div class="nav-icon">
+                <i class="fas fa-bars mobile_Header-nav-icon"></i>
+            </div>
+            <div>
+                <img class=" mobile-Header-logo" src="./imeges/logo/Logo.png" alt="">
+            </div>
+                <a href="#"  class="main-header__profile group" id="main-header__profile-id-mobile">
+                    <!-- Dom watch js -->
+                </a>
+        </div>
+        <!-- Navbar -->
+        <div class="nav ">
+            <div class="nav-wrapper">
+                <i class="fa fa-user-circle main-header__profile-icon-sidebar-mobile"></i>
+                <a href="#"  class="" id="main-header__profile-sidebar-mobile">
+                        <!-- Dom watch js -->
+                </a>
+                <div class="nav-Close-Btn">
+                    <i class="fas fa-times nav-icon-sidebar-xmark  "></i>
+                </div>
+            </div>    
+                <h3 class="nav-title-menu-sidebar"> دسته بندی ها </h3>
+                <ul class="nav-menu-sidebar " id="menus-wrapper-navbar-mobile">   
+                    <!-- Dom watch js -->   
+                </ul>   
+        </div>
+    </header>
+
+<!------ login-register -->
+
+<section class="before:absolute before:content-[''] before:w-[150%] before:h-[380px] before:bg-green-500 before:-z-10 before:-rotate-[4deg] before:-top-20 after:absolute after:content-[''] after:w-[150%] after:h-[380px] after:bg-[rgba(43,206,86,0.6)] after:-z-50 after:-rotate-[4deg] relative flex justify-center  overflow-hidden">
+    <!-- login -->
+    <div class="bg-white flex items-center flex-col  my-16 px-8 pt-10 pb-20 shadow-login rounded-xl max-w-[550px] border-b-4 border-green-500 ">
+        <!-- login-title -->
+        <span class="block text-gray-700 text-4xl">ورود به حساب کاربری</span>
+        <!-- login-subtitle -->
+        <span class="text-2xl text-gray-700">
+            خوشحالیم دوباره میبینیمت دوست عزیز :)
+        </span>
+        <!-- login__new-member -->
+        <div class="bg-gray-200 my-6 w-full rounded-lg flex  justify-center items-center py-6">
+            <!-- login__new-member-text -->
+            <span class="text-2xl text-gray-800">
+                کاربر جدید هستید؟
+            </span>
+            <!-- login__new-member-link -->
+            <a href="register.html" class=" bg-gray-500 py-1 mr-3 px-3 text-white rounded-xl text-xl">ثبت نام</a>
+        </div>
+        <!-- login form -->
+        <form action="#" class="w-full">
+            <!-- login form username-->
+            <div class="relative flex">
+                <input type="text " class="w-full p-4 my-4 shadow-textarea border rounded-lg placeholder:text-gray-500 border-gray-100" id="identifier" placeholder="نام کاربری یا آدرس ایمیل">
+                <i class="fa fa-user absolute top-10 left-8 text-4xl text-gray-400"></i>
+            </div>
+            <!-- login form Password-->
+            <div class="relative">
+                <input type="password " class="w-full p-4 my-4 shadow-textarea rounded-lg border border-gray-100 placeholder:text-gray-500" id="password" placeholder="رمز عبور">
+                <i class="fa fa-lock-open absolute top-10 left-8 text-4xl text-gray-400"></i>
+            </div>
+                   <!-- login form Btn-->
+            <button class="w-full bg-green-500 py-5 rounded-xl mt-4 text-white relative " id="login-btn">
+                <i class="fas fa-sign-out-alt text-3xl absolute right-3"></i>
+                <span class="mx-auto">ورود</span>
+            </button>
+                 <!-- login form password-setting-->
+            <div class="flex items-center justify-between mt-8">
+                 <!-- login form password-remember-->
+                <label class="flex items-center gap-1">
+                    <input type="checkbox" class="ml-4">
+                    <span class="text-2xl text-gray-600">مرا به خاطر داشته باش</span>
+                </label>
+                 <!-- login form password-forget-->
+                <label class="">
+                    <a href="#" class="text-2xl text-gray-600 hover:text-blue-600 transition duration-300">رمز عبور را فراموش کرده اید؟</a>
+                </label>
+            </div>
+        </form>
+        <!-- login-des -->
+        <div class="mt-12 text-gray-700 text-xl w-full">
+            <span class="text-gray-700 text-2xl">سلام کاربر محترم</span>
+            <ul class="list-disc mr-8 mt-4">
+                <li class="">لطفا از مرورگر های مطمئن و بروز مانند گوگل کروم و فایرفاکس استفاده کنید</li>
+                <li>ما هرگز اطلاعات محرمانه شما را از طریق ایمیل درخواست نمی کنیم.</li>
+                <li>لطفا کلمه عبور خود را در فواصل زمانی کوتاه تغییر دهید</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!---Start Footer-->
+<footer class=" ">
+    <div class="footer-weight container">
+        <!---footer-weight Right-->
+        <div class="">
+            <h3 class="footer-widgets__title ">درباره ما </h3>
+            <p class=" footer-widgets__text  ">
+                وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش
+                های خوب با پشتیبانی قابل قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل
+                قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن
+                به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس در اون رو نداره
+                و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم .
+                چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                هستند که هوای کاربر های عزیز رو داشته باشند !
+            </p>
+        </div>
+        <!---footer-weight center-->
+        <div class="w-[364px]">
+            <h3 class="footer-widgets__title  ">آخرین مطالب</h3>
+            <div class="  ">
+                <a class="footer-widgets__link" href="#">نحوه نصب کتابخانه در پایتون| آموزش نصب کتابخانه پایتون</a>
+                <a class="footer-widgets__link" href="#">چگونه پایتون را آپدیت کنیم؟| آموزش صفر تا صد آپدیت کردن
+                    پایتون</a>
+                <a class="footer-widgets__link" href="#">آموزش نصب پایتون(pyton)در مک ،ویندوز و لینوکس|گام به گام و
+                    تصویری</a>
+                <a class="footer-widgets__link" href="#">بهترین فریم ورک های فرانت اند |16فریم ورک Front end بررسی
+                    معایب و مزایا</a>
+                <a class="footer-widgets__link" href="#">معرفی بهترین سایت آموزش جاوااسکریپ [تجربه محور] + آموزش
+                    رایگان</a>
+            </div>
+        </div>
+        <!---footer-weight left-->
+        <div class="footer-weight-left ">
+            <div class="">
+                <h3 class="footer-widgets__title  ">دسترسی سریع</h3>
+                <div class="footer-widgets__links  ">
+                    <a class=" footer-widgets__link" href="#">آموزش HTML</a>
+                    <a class="footer-widgets__link" href="#">آموزش جاوااسکریپ</a>
+                    <a class="footer-widgets__link" href="#">آموزش ریکت</a>
+                    <a class="footer-widgets__link" href="#">آموزش CSS</a>
+                    <a class="footer-widgets__link" href="#">آموزش بوت استرپ</a>
+                    <a class="footer-widgets__link" href="#">آموزش پایتون</a>
+                </div>
+            </div>
+            <div class="footer-widgets__kol  " >
+                <span class="footer-widgets__title ">اشتراک در خبرنامه</span>
+                <span class="footer-widgets__text">جهت اطلاع از آخرین اخبار و تخفیف های سایت مشترک شوید!</span
+                >
+                <form action="#" class="footer-widgets__form relative ">
+                  <input type="text" class="footer-widgets__input " placeholder="ایمیل خود را وارد کنید." id="news-letter-input"/>
+                  <button type="submit" class="footer-widgets__btn " id="news-letter-submit-btn">
+                    عضویت
+                  </button>
+                </form>
+              </div>
+        </div>
+    </div>
+    <!-- footer__copyright-->
+    <div class="footer__copyright ">
+        <span class="footer__copyright-text">کلیه حقوق مادی و معنوی سایت محفوظ است.</span>
+    </div>
+</footer>
+<!---Finish Footer-->
+<div class="overlay "></div>
+<script src="vendor/SwiperSlider/swiper.js"></script>
+<script src="./scripts/font awesome 5 all.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/login.js" type="module"></script>
+<script src="scripts/shared.js" type="module"></script>
+</body>
+
+</html>

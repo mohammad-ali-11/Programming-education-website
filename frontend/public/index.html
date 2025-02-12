@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/font awesome 5/font awesome 5 all.min.css">
+    <link rel="stylesheet" href="vendor/SwiperSlider/swiper.css">
+    <link rel="stylesheet" href="style/app.css">
+    <title>سبزلرن</title>
+</head>
+<body class="font-Dana  bg-gray-50 p-4"  >
+ <header>
+    <!-------Top Bar Header-->
+    <div class="topbar-header ">
+         <!-------TopBor Right-->
+        <div class="top-bar__item  ">        
+        </div>
+         <!-------TopBor Left-->
+        <div class="top-bar__left hidden xl:flex">
+            <div>
+                <a href="#" class="text-xl lg:text-2xl">sabzlear@gmail.com</a>
+                <i class="fas fa-envelope top-bar__icon"></i>
+            </div>
+            <div>
+                <a href="#" class="text-xl lg:text-2xl ">0913677349</a>
+                <i class="fas fa-phone top-bar__icon"></i>
+            </div>
+        </div>
+    </div>
+
+ <!---- Header-->
+    <div class=" main-header  ">
+        <!----Header Right-->
+         <div class="flex items-center "> 
+            <!--logo-->
+            <img class=" h-16 xl:h-18 " src="./imeges/logo/Logo.png" alt=""> 
+            <!---menu-->
+            <ul class="main-header__menu" id="menus-wrapper">
+                <li>
+                    <a href="index.html" class="">صفحه اصلی</a>
+                </li> 
+                <!-- Dom watch js -->     
+            </ul>
+        </div> 
+        <!----Header Left--->
+         <div class="main-header__left hidden  lg:flex "> 
+            <!---icon search-->
+            <a href="#" class="main-header__search-btn ">
+                <i class="fas fa-search "></i>
+            </a>
+            <!---icon shopping-->
+            <a href="#" class="main-header__cart-btn ">
+                <i class="fas fa-shopping-cart "></i>
+            </a> 
+            <!-----profile-->
+            <a href="#"  class="main-header__profile group" id="main-header__profile-id">
+               <!-- <span class="main-header__profile-text">محمد علی خسروی</span> -->
+           </a>
+        </div>
+    </div> 
+    <!-- mobile Header -->
+    <div class="main-mobile-Header ">
+        <div class="nav-icon">
+            <i class="fas fa-bars mobile_Header-nav-icon"></i>
+        </div>
+        <div>
+            <img class=" mobile-Header-logo" src="./imeges/logo/Logo.png" alt="">
+        </div>
+            <a href="#"  class="main-header__profile group" id="main-header__profile-id-mobile">
+                <!-- Dom watch js -->
+            </a>
+    </div>
+    <!-- Navbar -->
+    <div class="nav ">
+        <div class="nav-wrapper">
+            <i class="fa fa-user-circle main-header__profile-icon-sidebar-mobile"></i>
+            <a href="#"  class="" id="main-header__profile-sidebar-mobile">
+                 <!-- Dom watch js -->
+            </a>
+            <div class="nav-Close-Btn">
+                <i class="fas fa-times nav-icon-sidebar-xmark  "></i>
+            </div>
+        </div>    
+            <h3 class="nav-title-menu-sidebar"> دسته بندی ها </h3>
+            <ul class="nav-menu-sidebar " id="menus-wrapper-navbar-mobile">   
+                <!-- Dom watch js -->   
+            </ul>   
+    </div>
+ </header>
+ <!----Finish Heder-->
+
+ <!-----Start Landing-->
+ <section class="landing mb-40">
+    <div class="container landing-bg">
+        <h1 class=" text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-normal" id="landing-title">
+        </h1>
+        <h2 class="text-white texxt-2xl md:text-3xl my-8 leading-normal">با آکادمی سبزلرن،برنامه نویسی را با خیال راحت یاد بگیر و پیشرفت کن</h2>
+        <div class=" flex items-center justify-between gap-x-5 md:gap-x-8 p-1.5 my-10 sm:p-2.5 w-2/3 md:w-2/5 bg-white rounded-full mx-auto border border-transparent focus-within:border-neutral-200 transition-all">
+            <input class="flex-grow pr-2.5 bg-transparent text-gray-900 focus:border-none focus:outline-none  transition-all duration-200" type="text" placeholder="چی دوست داری یاد بگیری..؟!" id="search-input">
+            <button class="flex items-center justify-center p-4 lg:p-6 rounded-full bg-green-500 shrink-0 " id="search-btn">
+                <i class="fas fa-search "></i>
+            </button>
+        </div>
+        <div class="flex items-center justify-center gap-x-8 sm:gap-x-16 lg:gap-x-20 md:mt-28  ">
+            <div class="flex flex-col items-center text-white">
+                <svg class="fill-white w-[60px] h-[60px] md:w-[80px] md:h-[80px] " xmlns="http://www.w3.org/2000/svg" id="Capa_1" viewBox="0 0 512 512" ><g><path d="m403.802 334.499-30.049-8.823-65.376-42.701v-9.784c18.928-14.277 31.926-36.1 34.342-61.115 9.493-1.528 16.766-9.777 16.766-19.693v-26.905c0-.104-.011-.206-.016-.31v-34.082c3.782-2.708 6.182-7.119 6.182-12.067v-31.19l45.117-7.685c7.415-1.263 12.747-7.152 13.271-14.655.522-7.503-3.941-14.075-11.108-16.354l-152.097-48.378c-3.174-1.01-6.526-1.009-9.698-.001l-152.099 48.379c-7.167 2.279-11.631 8.851-11.108 16.353.332 4.767 2.61 8.877 6.126 11.569v40.787h-.372c-8.565 0-15.533 6.968-15.533 15.533v20.246l-10.027 58.852c-1.733 10.179 6.107 19.496 16.457 19.496h33.949c10.327 0 18.194-9.295 16.457-19.497l-10.027-58.851v-20.246c0-8.565-6.968-15.533-15.533-15.533h-.371v-36.363l37.294 6.352v31.186c0 4.927 2.389 9.331 6.153 12.043l.014 34.419v26.902c0 9.917 7.273 18.165 16.766 19.693 2.415 25.001 15.399 46.814 34.309 61.092v9.83l-65.362 42.693-30.025 8.813c-32.129 9.43-54.815 38.927-54.815 73.215v22.352c0 4.142 3.357 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-22.352c0-27.024 18.109-51.213 44.04-58.823l27.976-8.212 111.766 66.413c2.269 1.348 5.271 1.42 7.662 0l111.773-66.417 27.973 8.212c25.927 7.612 44.036 31.8 44.036 58.822v72.438c0 9.291-7.559 16.85-16.85 16.85h-33.057v-32.328c0-4.142-3.357-7.5-7.5-7.5-4.142 0-7.5 3.357-7.5 7.5v32.328h-245.448v-32.328c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v32.328h-33.023c-9.291 0-16.85-7.559-16.85-16.85v-15.022c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v15.021c0 17.562 14.287 31.849 31.849 31.849h341.527c17.562 0 31.849-14.287 31.849-31.849v-72.438c0-33.48-21.912-63.555-54.81-73.214zm-285.274-117.528h-33.948c-1.049 0-1.849-.937-1.671-1.978l9.07-53.236h19.15l9.07 53.235c.177 1.039-.617 1.979-1.671 1.979zm-8.569-83.594v13.381h-16.811v-13.381c0-.295.239-.534.534-.534h15.742c.296-.001.535.239.535.534zm119.218 239.794 2.985 4.588-76.569-45.497 48.601-31.745c2.204 25.86 10.728 50.745 24.983 72.654zm-.052-32.375c17.653 2.508 36.087 2.51 53.75 0-3.413 8.398-7.619 16.502-12.624 24.196l-14.251 21.904-14.251-21.904c-5.005-7.694-9.211-15.798-12.624-24.196zm53.698 32.375c14.255-21.909 22.779-46.794 24.982-72.654l48.601 31.744-76.568 45.498zm43.871-239.292h17.776v24.098h-8.823c-4.937 0-8.954-4.016-8.954-8.953v-15.145zm-223.111-70.45 152.101-48.38c.195-.062.405-.063.603.001l152.1 48.379c.314.1.745.236.69 1.017-.055.78-.5.855-.826.911l-50.288 8.565-18.88-2.335c-4.108-.509-7.854 2.413-8.363 6.523-.508 4.111 2.413 7.855 6.523 8.363l13.41 1.659v30.748l-189.305-.007v-30.742l77.607-9.603c11.304-1.397 22.764-1.397 34.06 0l29.373 3.633c4.11.509 7.855-2.412 8.364-6.522.509-4.111-2.412-7.855-6.522-8.364l-29.373-3.633c-12.517-1.549-25.217-1.549-37.743 0l-83.094 10.282-50.303-8.567c-.326-.056-.771-.131-.826-.911-.054-.781.377-.918.692-1.017zm63.928 94.548-.01-24.098h17.805v15.146c0 4.936-4.016 8.953-8.954 8.953h-8.841zm16.507 50.244c-.386-6.107-5.462-10.891-11.555-10.891-2.729 0-4.949-2.22-4.949-4.948v-19.405h8.838c13.207 0 23.953-10.745 23.953-23.952v-15.146h111.389v15.146c0 13.207 10.746 23.952 23.953 23.952h8.838v19.405c0 2.728-2.22 4.948-4.949 4.948-6.093 0-11.169 4.784-11.555 10.892-2.389 37.869-34.007 67.534-71.982 67.534s-69.592-29.665-71.981-67.535zm71.982 82.534c13.339 0 26.017-3.05 37.378-8.473v4.753c0 12.823-1.73 25.472-5.061 37.672-20.382 3.886-43.425 4.043-64.634 0-3.331-12.199-5.061-24.848-5.061-37.672 0-.159-.022-.314-.032-.471-.002-.031.001-.062-.001-.093v-4.204c11.369 5.432 24.059 8.488 37.411 8.488z"></path></g></svg>
+                  <span class="font-bold mt-4 text-xl md:text-3xl" id="user-counter">1,071</span>
+                  <span class="font-semibold text-xl md:text-3xl md:font-bold mt-2">کاربر توی سبزلرن ثبت نام کردن</span>
+            </div>
+            <div class="flex flex-col items-center text-white">
+                <svg class="fill-white w-[60px] h-[60px] md:w-[80px] md:h-[80px] " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" >     
+                    <g>
+                      <path d="M460.8,200.748V51.2c-0.015-14.132-11.468-25.585-25.6-25.6h-8.533c-0.015-14.132-11.468-25.585-25.6-25.6H256    c-9.841,0.032-19.182,4.337-25.6,11.796C223.982,4.337,214.641,0.032,204.8,0H59.733c-14.132,0.015-25.585,11.468-25.6,25.6H25.6    C11.468,25.615,0.015,37.068,0,51.2v315.733c0.015,14.132,11.468,25.585,25.6,25.6h281.6V435.2    c0.049,42.395,34.405,76.751,76.8,76.8h51.2c42.395-0.049,76.751-34.405,76.8-76.8V273.067    C511.943,240.559,491.442,211.602,460.8,200.748z M426.667,42.667h8.533c4.71,0.006,8.527,3.823,8.533,8.533v145.57    c-2.833-0.326-5.682-0.494-8.533-0.503h-8.533V42.667z M85.333,17.067h51.2v112.208l-18.938-23.671    c-1.618-2.025-4.07-3.204-6.662-3.204c-2.592,0-5.044,1.179-6.662,3.204l-18.938,23.671V17.067z M51.2,25.6    c0.006-4.71,3.823-8.527,8.533-8.533h8.533V153.6c-0.002,3.625,2.287,6.854,5.708,8.054c3.42,1.2,7.225,0.107,9.488-2.725    l27.471-34.337l27.471,34.337c1.618,2.026,4.07,3.205,6.662,3.204c2.264,0.002,4.435-0.897,6.036-2.497    c1.601-1.601,2.499-3.772,2.497-6.036V17.067h51.2c9.422,0.009,17.057,7.645,17.067,17.067v278.34    c-5.344-3.407-11.542-5.235-17.879-5.274H51.2V25.6z M51.2,324.267h152.788c9.391,0.329,17.019,7.693,17.678,17.067H51.2V324.267z     M307.2,375.467H25.6c-4.71-0.006-8.527-3.823-8.533-8.533V51.2c0.006-4.71,3.823-8.527,8.533-8.533h8.533v307.2    c0,4.713,3.82,8.533,8.533,8.533H307.2V375.467z M307.2,341.333h-68.066c0.671-9.384,8.317-16.748,17.72-17.067H307.2V341.333z     M307.2,307.2h-50.346c-6.352,0.038-12.565,1.871-17.921,5.286V34.133c0.009-9.422,7.645-17.057,17.067-17.067h145.067    c4.71,0.006,8.527,3.823,8.533,8.533v170.667H384c-42.395,0.049-76.751,34.405-76.8,76.8V307.2z M401.067,213.333v110.933h-76.8    v-51.2c0.037-32.974,26.759-59.696,59.733-59.733H401.067z M494.933,435.2c-0.037,32.974-26.759,59.696-59.733,59.733H384    c-32.974-0.037-59.696-26.759-59.733-59.733v-93.867h170.667V435.2z M494.933,324.267h-76.8V213.333H435.2    c32.974,0.037,59.696,26.759,59.733,59.733V324.267z"></path>
+                    </g>
+                </svg>
+                <span id="landing-status-count"class=" font-bold mt-4 text-xl md:text-3xl">40</span>
+                <span class="font-semibold text-xl md:text-3xl md:font-bold mt-2">دوره آموزشی داریم</span>
+            </div>
+            <div class="flex flex-col items-center text-white">
+                <svg class="fill-white w-[60px] h-[60px] md:w-[80px] md:h-[80px] "  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 511.992 511.992" style="enable-background:new 0 0 511.992 511.992;" xml:space="preserve" >
+                    <g id="XMLID_806_">
+                      <g id="XMLID_386_">
+                        <path id="XMLID_389_" d="M511.005,279.646c-4.597-46.238-25.254-89.829-58.168-122.744    c-28.128-28.127-62.556-46.202-98.782-54.239V77.255c14.796-3.681,25.794-17.074,25.794-32.993c0-18.748-15.252-34-34-34h-72    c-18.748,0-34,15.252-34,34c0,15.918,10.998,29.311,25.793,32.993v25.479c-36.115,8.071-70.429,26.121-98.477,54.169    c-6.138,6.138-11.798,12.577-16.979,19.269c-0.251-0.019-0.502-0.038-0.758-0.038H78.167c-5.522,0-10,4.477-10,10s4.478,10,10,10    h58.412c-7.332,12.275-13.244,25.166-17.744,38.436H10c-5.522,0-10,4.477-10,10s4.478,10,10,10h103.184    c-2.882,12.651-4.536,25.526-4.963,38.437H64c-5.522,0-10,4.477-10,10s4.478,10,10,10h44.54    c0.844,12.944,2.925,25.82,6.244,38.437H50c-5.522,0-10,4.477-10,10s4.478,10,10,10h71.166    c9.81,25.951,25.141,50.274,45.999,71.132c32.946,32.946,76.582,53.608,122.868,58.181c6.606,0.652,13.217,0.975,19.819,0.975    c39.022,0,77.548-11.293,110.238-32.581c4.628-3.014,5.937-9.209,2.923-13.837s-9.209-5.937-13.837-2.923    c-71.557,46.597-167.39,36.522-227.869-23.957c-70.962-70.962-70.962-186.425,0-257.388c70.961-70.961,186.424-70.961,257.387,0    c60.399,60.4,70.529,156.151,24.086,227.673c-3.008,4.632-1.691,10.826,2.94,13.833c4.634,3.008,10.826,1.691,13.833-2.941    C504.367,371.396,515.537,325.241,511.005,279.646z M259.849,44.263c0-7.72,6.28-14,14-14h72c7.72,0,14,6.28,14,14s-6.28,14-14,14    h-1.794h-68.413h-1.793C266.129,58.263,259.849,51.982,259.849,44.263z M285.642,99.296V78.263h48.413v20.997    C317.979,97.348,301.715,97.36,285.642,99.296z"></path>
+                        <path id="XMLID_391_" d="M445.77,425.5c-2.64,0-5.21,1.07-7.069,2.93c-1.87,1.86-2.931,4.44-2.931,7.07    c0,2.63,1.061,5.21,2.931,7.07c1.859,1.87,4.43,2.93,7.069,2.93c2.63,0,5.2-1.06,7.07-2.93c1.86-1.86,2.93-4.44,2.93-7.07    c0-2.63-1.069-5.21-2.93-7.07C450.97,426.57,448.399,425.5,445.77,425.5z"></path>
+                        <path id="XMLID_394_" d="M310.001,144.609c-85.538,0-155.129,69.59-155.129,155.129s69.591,155.129,155.129,155.129    s155.129-69.59,155.129-155.129S395.539,144.609,310.001,144.609z M310.001,434.867c-74.511,0-135.129-60.619-135.129-135.129    s60.618-135.129,135.129-135.129S445.13,225.228,445.13,299.738S384.512,434.867,310.001,434.867z"></path>
+                        <path id="XMLID_397_" d="M373.257,222.34l-49.53,49.529c-4.142-2.048-8.801-3.205-13.726-3.205c-4.926,0-9.584,1.157-13.726,3.205    l-22.167-22.167c-3.906-3.905-10.236-3.905-14.143,0c-3.905,3.905-3.905,10.237,0,14.142l22.167,22.167    c-2.049,4.142-3.205,8.801-3.205,13.726c0,17.134,13.939,31.074,31.074,31.074s31.074-13.94,31.074-31.074    c0-4.925-1.157-9.584-3.205-13.726l48.076-48.076v0l1.453-1.453c3.905-3.905,3.905-10.237,0-14.142    S377.164,218.435,373.257,222.34z M310.001,310.812c-6.106,0-11.074-4.968-11.074-11.074s4.968-11.074,11.074-11.074    s11.074,4.968,11.074,11.074S316.107,310.812,310.001,310.812z"></path>
+                        <path id="XMLID_398_" d="M416.92,289.86h-9.265c-5.522,0-10,4.477-10,10s4.478,10,10,10h9.265c5.522,0,10-4.477,10-10    S422.442,289.86,416.92,289.86z"></path>
+                        <path id="XMLID_399_" d="M212.346,289.616h-9.264c-5.522,0-10,4.477-10,10s4.478,10,10,10h9.264c5.522,0,10-4.477,10-10    S217.868,289.616,212.346,289.616z"></path>
+                        <path id="XMLID_400_" d="M310.123,212.083c5.522,0,10-4.477,10-10v-9.264c0-5.523-4.478-10-10-10s-10,4.477-10,10v9.264    C300.123,207.606,304.601,212.083,310.123,212.083z"></path>
+                        <path id="XMLID_424_" d="M309.879,387.393c-5.522,0-10,4.477-10,10v9.264c0,5.523,4.478,10,10,10s10-4.477,10-10v-9.264    C319.879,391.87,315.401,387.393,309.879,387.393z"></path>
+                        <path id="XMLID_425_" d="M10,351.44c-2.63,0-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07c0,2.64,1.069,5.21,2.93,7.07    s4.44,2.93,7.07,2.93s5.21-1.07,7.069-2.93c1.86-1.86,2.931-4.44,2.931-7.07s-1.07-5.21-2.931-7.07    C15.21,352.51,12.63,351.44,10,351.44z"></path>
+                      </g>
+                    </g>
+                </svg>
+                <span class="font-bold mt-4 text-xl md:text-3xl" id="minutes-counter">2,320</span>
+                <span class="font-semibold text-xl md:text-3xl md:font-bold mt-2">دقیقه آموزش تولید کردیم</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-----Finish Landing-->
+
+
+<!-----Start Head Courses -->
+<section class="container flex items-end justify-between  my-12 ">
+    <div class="flex flex-col gap-y-1.5 items-start">
+        <span class="title-courses relative text-gray-700 text-3xl font-semibold">جدیدترین دوره ها </span>
+        <span class="text-gray-400">سکوی پرتاپ شما به سمت موفقیت</span>
+    </div>
+    <div>
+        <a href="courses.html?page=1" class="flex items-center justify-cente text-2xl gap-x-2 md:gap-x-4 text-white bg-green-500 px-3 py-1 rounded-md hover:text-blue-500">
+            تمامی دوره ها
+            <i class="fas fa-arrow-left"></i>
+        </a>
+
+    </div>
+</section>
+<!-----Finish  Head Courses-->
+
+<!-----Start Courses content-->
+<section class="container mb-40">
+
+<div class="courses-content " > 
+<!--* dom watch shaed.js -->
+
+</div>
+</section>
+<!-----Finish Courses content-->
+<!-----Start Head About Us -->
+<section class="container flex items-end justify-between  my-12 ">
+    <div class="flex flex-col gap-y-1.5 items-start">
+        <span class="title-courses relative text-gray-700 text-3xl font-semibold">  ما چه کمکی بهتون میکنیم؟ </span>
+        <span class="text-gray-400">  از اونحایی که آکادمی آموزشی سبزلرن یک آکادمی خصوصی هست</span>
+    </div> 
+</section>
+<!-----Finish  Head About Us-->
+
+<!------Start  About Us-->
+<section class="container mb-40">
+    <div class="grid grid-rows-2 md:grid-cols-2 gap-6 sm:gap-7 cursor-default ">
+        <div class="flex flex-col lg:flex-row items-center p-5 lg:p-6 rounded-2xl  gap-4 bg-white">
+            <div class="flex lg:shrink-0 justify-center lg:justify-end items-center w-[94px] h-[50px] lg:w-[51px] lg:h-[94px] mb-11 lg:mb-0 lg:ml-11 bg-sky-50 dark:bg-sky-600/20 rounded-full">
+                <svg class=" text-sky-500  w-2/3 lg:w-full -mt-8 lg:mt-0 translate-y-1/2 lg:translate-y-0 lg:-translate-x-1/2"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"></path>
+                </svg>
+            </div>
+            <div class="text-center lg:text-right ">
+                <h4 class="font-bold lg:text-2xl">  تضمین کامل ترین محتوا</h4>
+                <p class=" mt-3.5 lg:mt-5 text-gray-700 dark:text-gray-400 line-clamp-2">بزار خیالت راحت کنم توی دوره هامون به ریز ترین موارد پرداختیم بعداز دیدن این دوره نیاز به هیچ آموزش دیگه ای نداری. </p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center p-5 lg:p-6 rounded-2xl  gap-4 bg-white">
+            <div class="flex lg:shrink-0 justify-center lg:justify-end items-center w-[94px] h-[50px] lg:w-[51px] lg:h-[94px] mb-11 lg:mb-0 lg:ml-11 bg-sky-50 dark:bg-sky-600/20 rounded-full">
+                <svg  class=" text-amber-400 w-2/3 lg:w-full -mt-8 lg:mt-0 translate-y-1/2 lg:translate-y-0 lg:-translate-x-1/2"  xmlns="http://www.w3.org/2000/svg" id="chat-bubble-left-right-services" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path>
+                </svg>
+            </div>
+            <div class="text-center lg:text-right ">
+                <h4 class="font-bold lg:text-2xl"> پشتیبانی دائمی</h4>
+                <p class=" mt-3.5 lg:mt-5 text-gray-700 dark:text-gray-400 line-clamp-2">هرجا سوالی داشتی به مشکل خوردی بچه های تیم آمادن که مشکلت رو حل کنن تلاشمون اینه بدون نگرانی دوره رو کامل کنی.</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center p-5 lg:p-6 rounded-2xl  gap-4 bg-white"> 
+            <div class="flex lg:shrink-0 justify-center lg:justify-end items-center w-[94px] h-[50px] lg:w-[51px] lg:h-[94px] mb-11 lg:mb-0 lg:ml-11 bg-sky-50 dark:bg-sky-600/20 rounded-full">
+                <svg class=" text-green-500 w-2/3 lg:w-full -mt-8 lg:mt-0 translate-y-1/2 lg:translate-y-0 lg:-translate-x-1/2"  xmlns="http://www.w3.org/2000/svg" id="chat-bubble-left-right-services" xmlns="http://www.w3.org/2000/svg" id="chart-bar-services" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"></path>
+                </svg>
+            </div>
+            <div class="text-center lg:text-right">
+                <h4 class="font-bold lg:text-2xl"> پروژه محور در راستای بازار کار</h4>
+                <p class=" mt-3.5 lg:mt-5 text-gray-700 dark:text-gray-400 line-clamp-2"> کل تمرکز ما رو این هستش بعداز تموم شدن دوره شخص بتونه با اعتماد به نفس کامل پروژه بزنه واقدام کنه برای کسب درآمد.</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center p-5 lg:p-6 rounded-2xl  gap-4 bg-white">
+            <div class="flex lg:shrink-0 justify-center lg:justify-end items-center w-[94px] h-[50px] lg:w-[51px] lg:h-[94px] mb-11 lg:mb-0 lg:ml-11 bg-sky-50 dark:bg-sky-600/20 rounded-full">
+                <svg  class=" text-red-500  w-2/3 lg:w-full -mt-8 lg:mt-0 translate-y-1/2 lg:translate-y-0 lg:-translate-x-1/2"  xmlns="http://www.w3.org/2000/svg" id="chat-bubble-left-right-services" xmlns="http://www.w3.org/2000/svg" id="clipboard-document-check-services" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75"></path>
+                </svg>
+            </div>
+            <div class="text-center lg:text-right">
+                <h4 class="font-bold lg:text-2xl">سراغ حرفه ای ها رفتیم</h4>
+                <p class=" mt-3.5 lg:mt-5 text-gray-700 dark:text-gray-400 line-clamp-2">به جرعت میتونم بگم سخت گیرترین شرایط جذب مدرس داریم چون برامون مهمه محتوا خیلی ساده و روان بیان بشه که توی یادگیری به مشکل نخورید.</p>
+            </div>
+        </div>
+       
+    </div>
+</section>
+<!------finish  About Us-->
+
+<!-----Start Head Popular courses -->
+<section class="container flex items-end justify-between  my-12 ">
+    <div class="flex flex-col gap-y-1.5 items-start">
+        <span class="title-courses relative text-gray-700 text-3xl font-semibold">پرطرفدار ترین دوره ها </span>
+        <span class="text-gray-400">دوره های محبوب و پروژه محور سبزلرن</span>
+    </div> 
+</section>
+<!-----Finish  Head Popular courses-->
+
+<!-----Start  Popular courses -->
+<div class="container mb-40">
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper " id="Popular_courses-wrapper">
+         <!-- Dom watch shaed.js -->
+        </div>
+    </div>
+</div>
+<!-----Finish  Popular courses -->
+
+<!-----Start Head presell courses -->
+<section class="container flex items-end justify-between  my-12 ">
+    <div class="flex flex-col gap-y-1.5 items-start">
+        <span class="title-courses relative text-gray-700 text-3xl font-semibold">دوره های در حال پیش فروش </span>
+    </div> 
+</section>
+<!-----Finish  Head presell courses-->
+
+<!-----Start  presell courses -->
+<div class="container mb-40">
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper" id="presell_courses-wrapper">
+         <!-- Dom watch shaed.js -->
+        </div>
+    </div>
+</div>
+<!-----Finish  presell courses -->
+
+<!-----Start Head Blog  -->
+<section class="container flex items-end justify-between  my-12 ">
+    <div class="flex flex-col gap-y-1.5 items-start">
+        <span class="title-courses relative text-gray-700 text-3xl font-semibold">آخـــرین مقالات ما</span>
+        <span class="text-gray-400"> مقاله های بروز برنامه نویسی و تکنولوژی</span>
+    </div>
+    <div>
+        <a href="articles.html?page=1" class="flex items-center text-2xl  justify-cente gap-x-2 md:gap-x-4 text-white bg-green-500 px-3 py-1 rounded-md hover:text-blue-500">
+            همه مقالات 
+            <svg class="svg-inline--fa fa-arrow-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg><!-- <i class="fas fa-arrow-left"></i> Font Awesome fontawesome.com -->
+        </a>
+
+    </div>
+</section>
+<!-----Finish  Head Blog-->
+
+<!---Start Blog-->
+<section class="container mb-40">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10" id="articles-wrapper">
+
+        <!-- Dom watch shaed.js -->
+  
+    </div>
+</section>
+<!---Finishfooter-weight Blog-->
+
+<!---Start Footer-->
+<!---Start Footer-->
+<footer class=" ">
+    <div class="footer-weight container">
+        <!---footer-weight Right-->
+        <div class="">
+            <h3 class="footer-widgets__title ">درباره ما </h3>
+            <p class=" footer-widgets__text  ">
+                وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش
+                های خوب با پشتیبانی قابل قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل
+                قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن
+                به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس در اون رو نداره
+                و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم .
+                چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                هستند که هوای کاربر های عزیز رو داشته باشند !
+            </p>
+        </div>
+        <!---footer-weight center-->
+        <div class="w-[364px]">
+            <h3 class="footer-widgets__title  ">آخرین مطالب</h3>
+            <div class="  ">
+                <a class="footer-widgets__link" href="#">نحوه نصب کتابخانه در پایتون| آموزش نصب کتابخانه پایتون</a>
+                <a class="footer-widgets__link" href="#">چگونه پایتون را آپدیت کنیم؟| آموزش صفر تا صد آپدیت کردن
+                    پایتون</a>
+                <a class="footer-widgets__link" href="#">آموزش نصب پایتون(pyton)در مک ،ویندوز و لینوکس|گام به گام و
+                    تصویری</a>
+                <a class="footer-widgets__link" href="#">بهترین فریم ورک های فرانت اند |16فریم ورک Front end بررسی
+                    معایب و مزایا</a>
+                <a class="footer-widgets__link" href="#">معرفی بهترین سایت آموزش جاوااسکریپ [تجربه محور] + آموزش
+                    رایگان</a>
+            </div>
+        </div>
+        <!---footer-weight left-->
+        <div class="footer-weight-left ">
+            <div class="">
+                <h3 class="footer-widgets__title  ">دسترسی سریع</h3>
+                <div class="footer-widgets__links  ">
+                    <a class=" footer-widgets__link" href="#">آموزش HTML</a>
+                    <a class="footer-widgets__link" href="#">آموزش جاوااسکریپ</a>
+                    <a class="footer-widgets__link" href="#">آموزش ریکت</a>
+                    <a class="footer-widgets__link" href="#">آموزش CSS</a>
+                    <a class="footer-widgets__link" href="#">آموزش بوت استرپ</a>
+                    <a class="footer-widgets__link" href="#">آموزش پایتون</a>
+                </div>
+            </div>
+            <div class="footer-widgets__kol  " >
+                <span class="footer-widgets__title ">اشتراک در خبرنامه</span>
+                <span class="footer-widgets__text">جهت اطلاع از آخرین اخبار و تخفیف های سایت مشترک شوید!</span
+                >
+                <form action="#" class="footer-widgets__form relative ">
+                  <input type="text" class="footer-widgets__input " placeholder="ایمیل خود را وارد کنید." id="news-letter-input"/>
+                  <button type="submit" class="footer-widgets__btn " id="news-letter-submit-btn">
+                    عضویت
+                  </button>
+                </form>
+              </div>
+        </div>
+    </div>
+    <!-- footer__copyright-->
+    <div class="footer__copyright ">
+        <span class="footer__copyright-text">کلیه حقوق مادی و معنوی سایت محفوظ است.</span>
+    </div>
+</footer>
+<!---Finish Footer-->
+<div class="overlay "></div>
+<script src="vendor/SwiperSlider/swiper.js"></script>
+<script src="./scripts/font awesome 5 all.min.js"></script>
+<script src="scripts/slider.js"></script>
+<script src="scripts/index.js" type="module" ></script>
+<script src="scripts/shared.js" type="module" ></script>
+
+
+</body>
+</html>

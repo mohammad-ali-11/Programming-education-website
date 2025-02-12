@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/font awesome 5/font awesome 5 all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/app.css">
+    <title>Document</title>
+</head>
+
+<body class="font-Dana bg-gray-50">
+    <header>
+        <!-------Top Bar Header-->
+        <div class="topbar-header ">
+                <!-------TopBor Right-->
+            <div class="top-bar__item  ">        
+            </div>
+                <!-------TopBor Left-->
+            <div class="top-bar__left hidden xl:flex">
+                <div>
+                    <a href="#" class="text-xl lg:text-2xl">sabzlear@gmail.com</a>
+                    <i class="fas fa-envelope top-bar__icon"></i>
+                </div>
+                <div>
+                    <a href="#" class="text-xl lg:text-2xl ">0913677349</a>
+                    <i class="fas fa-phone top-bar__icon"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!---- Header-->
+        <div class=" main-header  ">
+            <!----Header Right-->
+                <div class="flex items-center "> 
+                <!--logo-->
+                <img class=" h-16 xl:h-18 " src="./imeges/logo/Logo.png" alt=""> 
+                <!---menu-->
+                <ul class="main-header__menu" id="menus-wrapper">
+                    <li>
+                        <a href="index.html" class="">صفحه اصلی</a>
+                    </li> 
+                    <!-- Dom watch js -->     
+                </ul>
+            </div> 
+            <!----Header Left--->
+                <div class="main-header__left hidden  lg:flex "> 
+                <!---icon search-->
+                <a href="#" class="main-header__search-btn ">
+                    <i class="fas fa-search "></i>
+                </a>
+                <!---icon shopping-->
+                <a href="#" class="main-header__cart-btn ">
+                    <i class="fas fa-shopping-cart "></i>
+                </a> 
+                <!-----profile-->
+                <a href="#"  class="main-header__profile group" id="main-header__profile-id">
+                    <!-- <span class="main-header__profile-text">محمد علی خسروی</span> -->
+                </a>
+            </div>
+        </div> 
+        <!-- mobile Header -->
+        <div class="main-mobile-Header ">
+            <div class="nav-icon">
+                <i class="fas fa-bars mobile_Header-nav-icon"></i>
+            </div>
+            <div>
+                <img class=" mobile-Header-logo" src="./imeges/logo/Logo.png" alt="">
+            </div>
+                <a href="#"  class="main-header__profile group" id="main-header__profile-id-mobile">
+                    <!-- Dom watch js -->
+                </a>
+        </div>
+        <!-- Navbar -->
+        <div class="nav ">
+            <div class="nav-wrapper">
+                <i class="fa fa-user-circle main-header__profile-icon-sidebar-mobile"></i>
+                <a href="#"  class="" id="main-header__profile-sidebar-mobile">
+                        <!-- Dom watch js -->
+                </a>
+                <div class="nav-Close-Btn">
+                    <i class="fas fa-times nav-icon-sidebar-xmark  "></i>
+                </div>
+            </div>    
+                <h3 class="nav-title-menu-sidebar"> دسته بندی ها </h3>
+                <ul class="nav-menu-sidebar " id="menus-wrapper-navbar-mobile">   
+                    <!-- Dom watch js -->   
+                </ul>   
+        </div>
+    </header>
+
+
+<!-------Breadcrumb-->
+<section class="container mb-8">
+    <div class="breadcrumb__content ">
+        <div class="breadcrumb__home-content-icon ">
+            <i class="fas fa-home breadcrumb__home-icon  "></i>
+        </div>
+        <ul class="breadcrumb__list ">
+            <li>
+                <a href="#" class="breadcrumb__link ">
+                    خانه
+                    <i class="fas fa-angle-left breadcrumb__icon "></i>
+    
+                </a>
+            </li>
+            <li>
+                <a href="#"  class=" hidden sm:flex breadcrumb__link">
+                    آموزش برنامه نویسی فرانت اند
+                    <i class="fas fa-angle-left breadcrumb__icon"></i>
+    
+                </a>
+            </li>
+            <li>
+                <a href="#"  class="breadcrumb__link">
+                    دوره متخصص جاوا اسکریپ
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</section>
+ <!--  Course Main Info -->
+<section class="container mb-24 mt-16 ">
+    <!--Course Main Info right -->
+<div class="flex flex-col-reverse   lg:flex-row ">
+    <div class="w-full lg:w-1/2 mt-4 ">
+        <a href="#" class="course-info__link hidden md:inline-flex  text-green-500 text-lg bg-[rgba(43,206,86,0.2)] border border-[rgba(43,206,86,0.2)] rounded-lg py-2 px-1 hover:text-blue-600 transition duration-300 ">آموزش برنامه نویسی فرانت اند</a>
+        <h1 class="course-info__title  font-bold text-3xl md:text-4xl xl:text-5xl my-14  text-slate-700 ">آموزش 20 کتابخانه جاوااسکریپ برای بازار کار</h1>
+        <p class="course-info__text ml-6 text-slate-600 text-2xl xl:text-3xl leading-normal">
+            امروزه کتابخانه‌ها کد نویسی را خیلی آسان و لذت بخش تر کرده اند. به قدری که حتی امروزه هیچ شرکت برنامه نویسی پروژه های خود را با Vanilla Js پیاده سازی نمی کند و همیشه از کتابخانه ها و فریمورک های موجود استفاده می کند. پس شما هم اگه میخواید یک برنامه نویس عالی فرانت اند باشید، باید کتابخانه های کاربردی که در بازار کار استفاده می شوند را به خوبی بلد باشید
+        </p>
+        <div class="mt-12">
+            <a href="#" class="ml-7 text-slate-600 hover:text-blue-600 transition duration-300">
+                <i class="fab fa-telegram-plane text-3xl"></i>
+            </a>
+            <a href="#" class="ml-7 text-slate-600 hover:text-blue-600 transition duration-300">
+                <i class="fab fa-twitter text-3xl"></i>
+            </a>
+            <a href="#" class="ml-7 text-slate-600 hover:text-blue-600 transition duration-300">
+                <i class="fab fa-facebook-f text-3xl"></i>
+            </a>
+        </div>
+    </div>
+    <!--Course Main Info left -->
+    <video class="w-full lg:w-1/2  rounded-xl"  controls src="" id="course-content-video"></video>
+</div>
+
+</section>
+
+
+ <!--  Course Main Info section -->
+   <section class=" container bg-white mt-4">
+    <div class="grid  grid-cols-12 gap-8">
+        <!--  Course Main Info section Right -->
+        <div class="col-span-12 lg:col-span-8  rounded-2xl">
+            <!--course Boxes section-->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 ">
+                <!---box1-->
+                <div class="flex flex-col md:flex-row items-center gap-x-5 gap-y-5 justify-center md:justify-start bg-white rounded-xl py-8 px-8 shadow-box-info" >
+                    <!--box-right-->
+                    <div>
+                        <i class="fas fa-graduation-cap text-5xl text-green-500"></i>
+                    </div>
+                    <!--box-left-->
+                    <div class=" flex flex-col space-y-1 ">
+                        <span class="font-semibold text-2xl">وضعیت دوره:</span>
+                        <span class="course-boxes__box-left--subtitle text-gray-700 font-medium text-2xl"></span>
+                    </div>
+                </div>
+                <!---box2-->
+                <div class="flex flex-col md:flex-row items-center gap-x-7 gap-y-5 justify-center md:justify-start bg-white rounded-xl py-8 px-8 shadow-box-info" >
+                    <!--box-right-->
+                    <div>
+                        <i class="fas fa-clock text-5xl text-green-500"></i>
+                    </div>
+                    <!--box-left-->
+                    <div class=" flex flex-col space-y-1 ">
+                        <span class="font-semibold text-2xl"> مدت زمان دوره</span>
+                        <span class="course-boxes__box-left--subtitle-time text-gray-700 font-medium text-2xl"> 19 ساعت </span>
+                    </div>
+                </div>
+                <!---box3-->
+                <div class="flex flex-col md:flex-row items-center gap-x-7 gap-y-5 justify-center md:justify-start bg-white rounded-xl py-8 px-8 shadow-box-info" >
+                    <!--box-right-->
+                    <div>
+                        <i class="fas fa-calendar-alt text-5xl text-green-500"></i>
+                    </div>
+                    <!--box-left-->
+                    <div class=" flex flex-col space-y-1 ">
+                        <span class="font-semibold text-2xl"> آخرین بروزرسانی</span>
+                        <span class="course-boxes__box-left--last-update text-gray-700 te font-medium text-2xl">  </span>
+                    </div>
+                </div>
+                <!---box4-->
+                <div class="flex flex-col md:flex-row items-center gap-x-7 gap-y-5 justify-center md:justify-start bg-white rounded-xl py-8 px-8 shadow-box-info" >
+                    <!--box-right-->
+                    <div>
+                        <i class="fas fa-user-alt text-5xl text-green-500"></i>
+                    </div>
+                    <!--box-left-->
+                    <div class=" flex flex-col space-y-1 ">
+                        <span class="font-semibold text-2xl">روش پشتیبانی</span>
+                        <span class="course-boxes__box-left--suppot text-gray-700 font-medium text-2xl">   </span>
+                    </div>
+                </div>
+                <!---box5-->
+                <div class="flex flex-col md:flex-row items-center gap-x-7 gap-y-5 justify-center md:justify-start bg-white rounded-xl py-8 px-8 shadow-box-info" >
+                    <!--box-right-->
+                    <div>
+                        <i class="fas fa-info-circle text-5xl text-green-500"></i>
+                    </div>
+                    <!--box-left-->
+                    <div class=" flex flex-col space-y-1 ">
+                        <span class="font-semibold text-2xl">پیش نیاز:</span>
+                        <span class="text-gray-700 font-medium text-2xl">HTML CSS </span>
+                    </div>
+                </div>
+                <!---box6-->
+                <div class="flex flex-col md:flex-row items-center gap-x-7 gap-y-5 justify-center md:justify-start bg-white rounded-xl py-8 px-8 shadow-box-info" >
+                    <!--box-right-->
+                    <div>
+                        <i class="fas fa-play text-5xl text-green-500"></i>
+                    </div>
+                    <!--box-left-->
+                    <div class=" flex flex-col space-y-1 ">
+                        <span class="font-semibold text-2xl">نوع مشاهده:</span>
+                        <span class="text-gray-700 font-medium text-2xl">ضبط شده/آنلاین </span>
+                    </div>
+                </div>
+            </div>
+            <!---progress section--->
+            <div class="bg-[#f0f2f7] rounded-2xl my-12 px-8 pt-8 pb-5 ">
+                <div class="flex items-center gap-6 mb-6">
+                    <i class="fas fa-chart-line text-slate-600 text-3xl"></i>
+                    <span class="text-slate-600 text-2xl ">درصد پیشرفت دوره: 100%</span>
+                </div>
+                <div class="w-full h-4 mb-4 bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="h-4 bg-green-600 rounded-full dark:bg-green-500" style="width: 45%"></div>
+                  </div>
+            </div>
+            <!---introduction-->
+            <div class="introduction bg-white p-12 mb-24 rounded-2xl">
+                <!-- introduction-item 1 -->
+                <div class="introduction-item ">
+                    <span class="title-courses relative text-gray-700 text-3xl font-semibold mb-6">
+                        آموزش 20 کتابخانه جاوا اسکریپت مخصوص بازار کار
+                    </span>
+                    <img src="imeges/info/1.gif" class="rounded-2xl my-10" alt="">
+                    <p class="mb-12 text-2xl xl:text-3xl text-gray-800 leading-normal ">
+                        کتابخانه های بسیار زیادی برای زبان جاوا اسکریپت وجود دارد و سالانه چندین کتابخانه جدید نیز به این لیست اضافه می شود که در بازار کار به شدت از آن ها استفاده می شود و اگر بدون بلد بودن این کتابخانه ها وارد بازار کار شوید، خیلی اذیت خواهید شد و حتی ممکن است ناامید شوید!
+                      </p>
+                      <p class="mb-12 text-2xl xl:text-3xl leading-normal text-gray-800">
+                        در این دوره نحوه کار با 20 مورد از پر استفاده ترین کتابخانه های جاوا اسکریپت به صورت پروژه محور به شما عزیزان آموزش داده می شود تا هیچ مشکلی برای ورود به بازار کار نداشته باشید
+                      </p>
+                </div>
+                <!-- introduction-item 2 -->
+                <div class="introduction-item ">
+                    <span class="title-courses relative text-gray-700 text-3xl font-semibold mb-6">
+                        هدف از این دوره چیست؟ (تنها راه ورود به بازار کار و کسب درآمد)
+                    </span>
+                    <img src="imeges/info/2.jpg" class="rounded-2xl my-10" alt="">
+                    <p class="mb-12 text-2xl lg:text-3xl text-gray-800 leading-normal">
+                        وقتی برای اولین بار وارد یکی از شرکت های برنامه نویسی شدم، از کتابخانه هایی به اسم Lodash و Formik استفاده می شد، در حالی که من اولین بارم بود اسم Formik را می شنیدم و تا اون موقع از این کتابخانه ها استفاده نکرده بودم.
+                    </p>
+                    <p class="mb-12 text-2xl lg:text-3xl text-gray-800 leading-normal">
+                        همینجا بود که متوجه شدم کتابخانه های جاوا اسکریپت یکی از مهم ترین مباحثی هستند که هر برنامه نویس وب برای ورود به بازار کار و کسب درآمد بهتر، راحت و بیشتر باید با آن ها کار کرده باشد     
+                     </p>
+                    <p class="mb-12 text-2xl lg:text-3xl text-gray-800 leading-normal">
+                          همان طور که از اسم این دوره مشخص است، هدف از این دوره آموزش 20 مورد از کاربردی ترین و پر استفاده ترین کتابخانه های جاوا اسکریپت است تا شما بتوانید بعد از این دوره با قدرت و آمادگی بیشتر ادامه مسیر برنامه نویسی وب را ادامه دهید، ری اکت یا نود یا … را راحت تر یاد بگیرید و در نهایت وارد بازار کار شده و کسب درآمد کنید.
+                    </p>
+                    <p class="mb-12 text-2xl lg:text-3xl text-gray-800 leading-normal">
+                          شا به عنوان یک برنامه نویس وب، حداقل اگر با کتابخانه خاصی کار نکرده باشید، باید بلد باشید که چطور باید یک کتابخانه جدید را یاد بگیرید. فرض کنید یک یک کتابخانه جدید ساخته شد. آیا شما باید منتظر دوره آموزشی باشید؟! قطعا نه.
+                    </p>
+                    <p class="mb-12 text-2xl lg:text-3xl text-gray-800 leading-normal">
+                          در این دوره سعی کردیم علاوه بر آموزش مستقیم هر کتابخانه، نحوه یادگیری یک کتابخانه جدید را نیز به شما عزیزان آموزش دهیم تا بعد از گذراندن دوره، دیگر وابسته هیچ دوره یا شخص خاصی نباشید و اگر کتابخانه جدیدی به دنیای جاوا اسکریپت و وب اضافه شد، به راحتی بتوانید آن را یاد بگیرید.
+                    </p>
+                </div>
+                <!-- introduction-Btn -->
+                <div class="introduction__btns mb-12">
+                    <a href="#" class="inline-block text-2xl md:text-3xl text-green-500 border border-green-500 hover:bg-green-500 hover:text-white px-3 py-2  md:px-5 md:py-4  rounded-lg my-6 transition duration-300n"> دانلود همگانی ویدیوها</a>
+                    <a href="#" class="inline-block text-2xl md:text-3xl md:mr-6 text-green-500 border border-green-500 hover:bg-green-500 hover:text-white px-3 py-2  md:px-5 md:py-4  rounded-lg my-6 transition duration-300n"> دانلود همگانی پیوست ها</a>
+                </div>
+                <!---accordion-->
+                <div class="mb-14">                        
+                    <div id="accordion-collapse1" data-accordion="collapse"  class="mb-8 bg-[#f7f9fa]" >
+                        <h2 id="accordion-collapse-heading-1">
+                        <button type="button" class="flex items-center justify-between bg-[#f7f9fa] w-full p-5 font-medium rtl:text-right text-gray-500 border border-b border-gray-200 rounded-t-xl focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
+                            <span class="text-2xl text-gray-600 font-semibold tracking-wide">جلسات دوره </span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" aria-hidden="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                        </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1" class="hidden sessions-wrapper " aria-labelledby="accordion-collapse-heading-1 bg-[#f7f9fa]">
+                           <!-- session dom js -->
+                            
+                            
+                        </div>                        
+                    </div>
+                    
+                </div>   
+            </div>
+            <!-- Start Teacher Details -->
+            <div class="techer-details bg-[#f0f2f7] rounded-2xl p-12 mb-12 ">
+                <div class="techer-details__header flex items-center justify-between ">
+                  <div class="techer-details__header-right flex items-center gap-6">
+                    <img src="imeges/info/teacher.jfif" alt="Teacher Profile" class="techer-details__header-img w-24 h-full rounded-full shadow-box-profile" />
+                    <div class="techer-details__header-titles flex flex-col gap-3 ">
+                      <a href="#" class="techer-details__header-link hover:text-blue-600 transition duration-300 text-slate-700 ">محمدامین سعیدی راد</a>
+                      <span class="techer-details__header-skill text-slate-700">
+                        Front End & Back End Developer
+                      </span>
+                    </div>
+                  </div>
+                  <div class="techer-details__header-left flex items-center gap-2 bg-green-500 text-white py-2 px-4 rounded-lg">
+                    <i class="fas fa-chalkboard-teacher techer-details__header-icon text-3xl"></i>
+                    <span class="techer-details__header-name text-2xl font-semibold">مدرس</span>
+                  </div>
+                </div>
+                <p class="techer-details__footer leading-normal mt-6 text-gray-800">
+                  اول از همه برنامه نویسی اندروید رو شروع کردم و نزدیک به 2 سال با زبان جاوا اندروید کار میکردم .بعد تصمیم گرفتم در زمینه وب فعالیت داشته باشم.و..
+                </p>
+            </div>
+            <!--- Comments--->
+            <div class="comments  rounded-2xl mt-8 py-8 px-10">
+                <div class="comments__header flex items-center mb-20  ">
+                    <div class="comments__header-icon-content bg-green-500 text-white w-16 h-16 flex justify-center items-center rounded-lg">
+                        <i class="comments__header-icon far fa-comment text-4xl"></i>
+                    </div>
+                    <span class="comments__header-title mr-4">نظرات</span>
+                </div>
+                <div class="comments__content mt-12">
+                    <!-- Dom Watch js -->
+                    
+                </div>
+                <!-- <div class="comments__pagantion">
+                    <ul class="comments__pagantion-list flex justify-center items-center">
+                        <li class="comments__pagantion-item">
+                            <a href="#" class="comments__pagantion-link rounded-lg w-16 h-16 flex justify-center items-center text-2xl bg-gray-100 mx-2 hover:text-white hover:bg-green-500">
+                                <i class="fas fa-long-arrow-alt-right comments__pagantion-icon"></i>
+                            </a>
+                        </li>
+                        <li class="comments__pagantion-item">
+                            <a href="#" class="comments__pagantion-link rounded-lg w-16 h-16 flex justify-center items-center text-2xl bg-gray-100 mx-2 hover:text-white hover:bg-green-500">1</a>
+                        </li>
+                        <li class="comments__pagantion-item">
+                            <a href="#" class="comments__pagantion-link rounded-lg w-16 h-16 flex justify-center items-center text-2xl bg-gray-100 mx-2 hover:text-white hover:bg-green-500">2</a>
+                        </li>
+                        <li class="comments__pagantion-item">
+                            <a href="#"
+                                class="comments__pagantion-link comments__pagantion-link--active   rounded-lg w-16 h-16 flex justify-center items-center text-2xl bg-gray-100 mx-2 hover:text-white hover:bg-green-500">3</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="comments__rules flex flex-col mt-24">
+                    <span class="comments__rules-title text-2xl font-bold text-gray-800 mb-6">قوانین ثبت دیدگاه</span>
+                    <span class="comments__rules-item text-xl text-gray-800 mb-2">
+                        <i class="fas fa-check comments__rules-icon text-green-400 ml-2"></i>
+                        اگر نیاز به پشتیبانی دوره دارید از قسمت پرسش سوال در قسمت نمایش انلاین استفاده
+                        نمایید و سوالات مربوط به رفع اشکال تایید نخواهند شد
+                    </span>
+                    <span class="comments__rules-item text-xl text-gray-800 mb-2">
+                        <i class="fas fa-check comments__rules-icon text-green-400 ml-2"></i>
+                        دیدگاه های نامرتبط به دوره تایید نخواهد شد.
+                    </span>
+                    <span class="comments__rules-item text-xl text-gray-800 mb-2">
+                        <i class="fas fa-check comments__rules-icon text-green-400 ml-2"></i>
+                        سوالات مرتبط با رفع اشکال در این بخش تایید نخواهد شد.
+                    </span>
+                    <span class="comments__rules-item text-xl text-gray-800 mb-2">
+                        <i class="fas fa-check comments__rules-icon text-green-400 ml-2"></i>
+                        از درج دیدگاه های تکراری پرهیز نمایید.
+                    </span>
+                </div>
+                <div class="comments__respond bg-[#f0f2f7]  rounded-2xl p-12">
+                    <div class="comments__score">
+                        <span class="comments__score-title text-2xl text-gray-500">امتیاز شما</span>
+                        <div class="comments__score-input  w-72 ">
+                           <select class="  rounded-lg shadow-lg w-full text-xl py-2 " id="comment-score">
+                                <option class="p-6 bg-gray-800 text-white text-lg " value="5">به دوره امتیاز دهید</option>
+                                <option class="p-6 bg-gray-800 text-white text-lg" value="5">عالی</option>
+                                <option class="p-6 bg-gray-800 text-white text-lg" value="4">خیلی خوب</option>
+                                <option class="p-6 bg-gray-800 text-white text-lg" value="3">خوب</option>
+                                <option class="p-6 bg-gray-800 text-white text-lg" value="2">قابل قبول</option>
+                                <option class="p-6 bg-gray-800 text-white text-lg" value="1">ضعیف</option>
+                           </select>
+                           
+                        </div>
+                    </div>
+                    <div class="comments__respond-content mt-4">
+                        <div class="comments__respond-title text-2xl text-gray-500 mb-2">دیدگاه شما *</div>
+                        <textarea class="comments__score-input-respond w-full h-80 outline-none border border-gray-100 rounded-lg" id="body" ></textarea>
+                    </div>
+                    <button type="submit" class="comments__respond-btn bg-green-500 text-white text-2xl border-none rounded-lg py-2 px-8 mt-8">ارسال</button>
+                </div>
+            </div>
+
+            
+        </div>
+         <!--  Course Main Info section Left -->
+        <div class="col-span-12 lg:col-span-4 rounded-3xl mb-8">
+            <!----course info-->
+            <div class="course-info sticky top-2 ">
+                <!-- course-info-register -->
+                <div class="py-9 px-9 bg-white rounded-xl shadow-category border border-gray-100">
+                    <div class="flex items-center justify-center gap-4 text-white bg-green-500 rounded-lg py-6 px-4 shadow-box-register">
+                        <i  class="fas fa-graduation-cap text-3xl"></i>
+                        <span class="course-info__register-title text-2xl font-semibold">  </span>
+                    </div>
+                </div>
+                      <!-- course-info-Total -->
+                <div class="py-9 px-9 bg-white rounded-xl shadow-category border border-gray-100 mt-4">
+                    <div class="flex flex-col ">
+                            <!-- course-info-Total Top -->
+                        <div class="flex items-center justify-center gap-4 rounded-lg py-6 px-4 border-2 border-gray-100 ">
+                            <i class="fas fa-user-graduate text-5xl  text-gray-600 "></i>
+                            <span class="text-gray-500">تعداد دانشجو:</span>
+                            <span class="course-info-total-students text-white bg-gray-300 rounded-lg py-2 px-4">178</span>
+                        </div>
+                        <!-- course-info-Total Bottom -->
+                        <div class="flex items-center justify-center gap-8 mt-8">
+                            <!--right-->
+                            <div class="flex items-center gap-4">
+                                <i class="far fa-comments text-4xl text-gray-600"></i>
+                                <span class="course-info-total-comment-text">  </span>
+                            </div>
+                            <span class=" block w-px h-14  bg-black/20 mx-3"></span>
+                            <!---left-->
+                            <div class="flex items-center gap-4">
+                                <i class="far fa-eye text-4xl text-gray-600"></i>
+                                <span> 14,566 بازدید</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- course-info-Short-url -->
+                <div class="py-9 px-9 bg-white rounded-xl shadow-category border border-gray-100 mt-4 text-gray-800">
+                    <div class="flex items-center gap-4 mb-6">
+                        <i class="fas fa-link text-3xl"></i>
+                        <span class="text-2xl">لینک کوتاه</span>
+                    </div>
+                    <span class="block py-2 px-4 border border-gray-100 mt-4 text-gray-700 rounded-lg">https://sabzlearn.ir/?p=117472</span>
+                </div>
+                   <!-- course-info-Topic Title -->
+                <div class="py-9 px-9 bg-white rounded-xl shadow-category border border-gray-100 mt-4">
+                    <span class="block text-3xl mb-4">سرفصل های دوره</span>
+                    <span class="block text-gray-700 text-2xl">برای مشاهده و یا دانلود دوره روی کلمه <a href="#" class="text-blue-700 font-bold">لینک</a> کلیک کنید</span>
+                </div>
+                 <!-- course-info-courses box5 -->
+                 <div class="course-info-courses ">
+                    <span class="course-info-courses-Title " >دوره های مرتبط</span>
+                    <ul class="course-info-course-list">
+                        <!-- dom ti js -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+
+
+
+
+
+
+
+<!---Start Footer-->
+<footer class=" ">
+    <div class="footer-weight container">
+        <!---footer-weight Right-->
+        <div class="">
+            <h3 class="footer-widgets__title ">درباره ما </h3>
+            <p class=" footer-widgets__text  ">
+                وقتی تازه شروع به یادگیری برنامه نویسی کردم. یکی از مشکلاتی که در فرآیند یادگیری داشتم، کمبود آموزش
+                های خوب با پشتیبانی قابل قبول بود که باعث شد اون موقع تصمیم بگیرم اگر روزی توانایی مالی و فنی قابل
+                قبولی داشتم یک وب سایت برای حل این مشکل راه اندازی کنم! و خب امروز آکادمی آموزش برنامه نویسی سبزلرن
+                به عنوان یک آکادمی خصوصی فعالیت میکنه و این به این معنی هست که هر مدرسی اجازه تدریس در اون رو نداره
+                و باید از فیلترینگ های خاص آکادمی سبزلرن رد شه! این به این معنی هست که ما برامون فن بیان و نحوه
+                تعامل مدرس با دانشجو بسیار مهمه! ما در آکادمی سبزلرن تضمین پشتیبانی خوب و با کیفیت رو به شما میدیم .
+                چرا که مدرسین وب سایت سبزلرن حتی برای پشتیبانی دوره های رایگان شون هم هزینه دریافت میکنند و متعهد
+                هستند که هوای کاربر های عزیز رو داشته باشند !
+            </p>
+        </div>
+        <!---footer-weight center-->
+        <div class="w-[364px]">
+            <h3 class="footer-widgets__title  ">آخرین مطالب</h3>
+            <div class="  ">
+                <a class="footer-widgets__link" href="#">نحوه نصب کتابخانه در پایتون| آموزش نصب کتابخانه پایتون</a>
+                <a class="footer-widgets__link" href="#">چگونه پایتون را آپدیت کنیم؟| آموزش صفر تا صد آپدیت کردن
+                    پایتون</a>
+                <a class="footer-widgets__link" href="#">آموزش نصب پایتون(pyton)در مک ،ویندوز و لینوکس|گام به گام و
+                    تصویری</a>
+                <a class="footer-widgets__link" href="#">بهترین فریم ورک های فرانت اند |16فریم ورک Front end بررسی
+                    معایب و مزایا</a>
+                <a class="footer-widgets__link" href="#">معرفی بهترین سایت آموزش جاوااسکریپ [تجربه محور] + آموزش
+                    رایگان</a>
+            </div>
+        </div>
+        <!---footer-weight left-->
+        <div class="footer-weight-left ">
+            <div class="">
+                <h3 class="footer-widgets__title  ">دسترسی سریع</h3>
+                <div class="footer-widgets__links  ">
+                    <a class=" footer-widgets__link" href="#">آموزش HTML</a>
+                    <a class="footer-widgets__link" href="#">آموزش جاوااسکریپ</a>
+                    <a class="footer-widgets__link" href="#">آموزش ریکت</a>
+                    <a class="footer-widgets__link" href="#">آموزش CSS</a>
+                    <a class="footer-widgets__link" href="#">آموزش بوت استرپ</a>
+                    <a class="footer-widgets__link" href="#">آموزش پایتون</a>
+                </div>
+            </div>
+            <div class="footer-widgets__kol  " >
+                <span class="footer-widgets__title ">اشتراک در خبرنامه</span>
+                <span class="footer-widgets__text">جهت اطلاع از آخرین اخبار و تخفیف های سایت مشترک شوید!</span
+                >
+                <form action="#" class="footer-widgets__form relative ">
+                  <input type="text" class="footer-widgets__input " placeholder="ایمیل خود را وارد کنید." id="news-letter-input"/>
+                  <button type="submit" class="footer-widgets__btn " id="news-letter-submit-btn">
+                    عضویت
+                  </button>
+                </form>
+              </div>
+        </div>
+    </div>
+    <!-- footer__copyright-->
+    <div class="footer__copyright ">
+        <span class="footer__copyright-text">کلیه حقوق مادی و معنوی سایت محفوظ است.</span>
+    </div>
+</footer>
+<!---Finish Footer-->
+<div class="overlay "></div>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+<script src="scripts/font awesome 5 all.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="scripts/shared.js" type="module"></script>
+<script src="scripts/course.js" type="module" ></script>
+</body>
+
+</html>

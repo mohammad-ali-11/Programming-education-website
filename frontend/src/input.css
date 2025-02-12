@@ -1,0 +1,491 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.6;
+    font-size:1.6rem ;
+}
+
+@layer base{
+  
+    @font-face {
+        font-family:"Dana" ;/*400*/
+        src:local("Dana"), url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "IRANSans Black";
+        src:local("IRANSans Black"), url("../fonts/IRANSans/IRANSans_Black.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "IRANSans Bold";
+        src:local("IRANSans Bold"), url("../fonts/IRANSans/IRANSans_Bold.ttf") ;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "IRANSans Light";
+        src:local("IRANSans Light"), url("../fonts/IRANSans/IRANSans_Light.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "IRANSans Medium";
+        src:local("IRANSans Medium"), url("../fonts/IRANSans/IRANSans_Medium.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "IRANSans UltraLight";
+        src:local("IRANSans UltraLight"), url("../fonts/IRANSans/IRANSans_UltraLight.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "IRANSans ";
+        src:local("IRANSans "), url("../fonts/IRANSans/IRANSans.ttf") format("truetype");
+        font-display: swap;
+    }
+}
+
+@layer components{
+    .landing-bg{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../imeges/background_landing.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 9rem 0;
+    color: white;
+    }
+    .title-courses::before{
+    content: '';
+    position: absolute;
+    right: -1rem;
+    width: .4rem;
+    height: 4.4rem;
+    background-color: #22c55e;
+    border-radius: 5rem;
+    transform: rotate(8deg);
+
+    }
+    .title-courses::after{
+     content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 60%;
+    background-color: rgba(43, 206, 86, 0.2);
+
+    }
+   
+    /* -------start Top Bar Header-- */
+    .topbar-header{
+        @apply hidden md:flex container xl:max-w-[1920px]  justify-between items-center bg-blue-50 py-8 px-4
+    }
+    /* TopBor Right */
+    .top-bar__item{
+        @apply flex gap-4 mr-6
+    }
+    .top-bar__link{
+        @apply  text-zinc-700 text-xl lg:text-2xl pl-3 transition-all  hover:text-blue-500 font-Dana
+    }
+    /* TopBor Left */
+    .top-bar__left{
+        @apply  flex gap-x-6 items-center
+    }
+    .top-bar__icon{
+        @apply  text-green-500 text-2xl  px-3
+    }
+     /* -------Finish Top Bar Header-- */
+
+
+
+    /* ----------Start Header------ */
+    .main-header{
+        @apply container hidden md:flex  items-center justify-between px-0 h-28
+    }
+    /* ---Header Right--- */
+    .main-header__right{
+        @apply  flex  items-center gap-3 h-28 
+    }
+    /* menu */
+    .main-header__menu{
+        @apply  flex items-center  gap-6  h-28 mr-8 text-gray-800
+    }
+
+    /* -------Mobile----- */
+    /* menu Mobile */
+.main-mobile-Header{
+    @apply container px-4 flex items-center justify-between py-4 md:hidden rounded-2xl
+}
+.mobile_Header-nav-icon{
+    @apply w-10 h-10 text-gray-600
+}
+.mobile-Header-logo{
+    @apply h-16 xl:h-auto
+}
+/* .main-header__profile{
+    @apply 
+}  */
+
+    /* Navbar Mobile */
+    .nav{
+    @apply  container fixed md:hidden top-0 bottom-0 -right-80 w-80 px-4 pt-3 bg-white overflow-y-auto z-20 transition-all 
+    }
+    .nav-wrapper{
+    @apply  flex items-center justify-between px-3 py-4  gap-3 border-b border-green-500 mb-4
+    }
+    .main-header__profile-icon-sidebar-mobile{
+    @apply  w-14 h-14 text-green-500
+    }
+    .nav-icon-sidebar-xmark{
+        @apply w-8 h-8 text-gray-600
+    }
+    .nav-title-menu-sidebar{
+     @apply  text-green-500 mt-8 mb-8
+    }
+    .nav-menu-sidebar{
+    @apply flex flex-col justify-between  font-Dana px-2.5  space-y-3  text-gray-700
+    }    
+    .main-header__link-icon-navbar{
+    @apply transition-transform duration-300 text-xl  inline-block group-hover:rotate-180  w-6 h-6
+    }
+    .hidden {
+        display: none;
+    }
+    
+    .submenu {
+        display: none; /* در ابتدا مخفی باشد */
+    }
+    /* .submenu{
+        @apply hidden flex-col gap-y-5 w-full pr-7 mt-3 text-xl font-Dana  text-zinc-600 
+    } */
+    .submenu_open{
+        @apply flex flex-col gap-y-5 w-full pr-5 mt-3 text-xl font-Dana  text-zinc-600 
+    }
+    .main-header__profile-text-mobile{
+        @apply group-hover:bg-green-500  group-hover:text-white text-xl  py-1 px-2 
+    }
+    .main-header__profile-sidebar{
+        @apply text-gray-700 text-2xl
+    }
+    /* Submenu */
+    .main-header__link{
+        @apply transition-all delay-75 
+    }
+    .main-header__link-icon{
+        @apply mr-2  transition-transform duration-300 text-xl
+    }
+    /* ul-submenu */
+    .main-header__dropdown-item{
+        @apply  absolute text-2xl font-medium opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all w-80  top-full bg-white dark:bg-zinc-700 shadow-md rounded-2xl  text-zinc-700 dark:text-white space-y-4 p-6 z-10
+    }
+    /* a-submenu */
+    .main-header__dropdown-link{
+        @apply inline-block hover:text-blue-600 transition-colors mb-2 font-Dana
+    }
+    /* overlay */
+    .overlay{
+        @apply  bg-black/40 fixed invisible opacity-0 inset-0 md:hidden w-full h-full z-10 transition-all 
+      }
+     .overlay_visible{
+     @apply  visible opacity-100
+     }
+    
+
+
+    /* ---Header Left--- */
+    .main-header__left{
+        @apply flex items-center gap-4
+    }
+    /* icon search */
+    .main-header__search-btn{
+        @apply flex items-center justify-center w-12 h-12 rounded-md bg-green-500 text-white
+    }
+    /* icon shopping */
+    .main-header__cart-btn{
+        @apply flex items-center justify-center w-12 h-12 rounded-md bg-gray-200 hover:text-blue-500
+    }
+    /* profile */
+    .main-header__profile{
+        @apply flex items-center justify-center   border-2 border-green-500 rounded-md transition text-green-500 
+    }
+    .main-header__profile-text{
+        @apply group-hover:bg-green-500  group-hover:text-white  py-1 px-3
+    }
+    /* ----------Finish Header------ */
+
+
+
+
+    /* ----start  courses-top-bar setting-- */
+
+    .courses-top-bar{
+            @apply flex flex-col md:flex-row md:items-center justify-start md:justify-between px-4 pt-4 shadow-category bg-white w-full
+
+        }
+    .courses-top-bar__right{
+        @apply flex items-center
+    }
+    .courses-top-bar__row-btn{
+        @apply py-3.5 px-4 flex items-center justify-center w-16 h-16 rounded-md text-black cursor-pointer border border-gray-200 ml-4
+    }
+    .courses-top-bar__column-btn{
+        @apply py-3.5 px-4 flex items-center justify-center w-16 h-16 rounded-md  cursor-pointer border border-gray-200 ml-4
+    }
+    .courses-top-bar__icon--active{
+        @apply text-white bg-blue-500 
+    }
+    .courses-top-bar__selection{
+        @apply w-full  md:w-[220px] text-2xl border border-gray-200 rounded-lg py-4 px-6 text-zinc-800 cursor-pointer hover:bg-blue-500 hover:text-white transition duration-300
+    }
+    .courses-top-bar__selection-icon{
+        @apply  mr-4 group-hover:rotate-180 transition duration-300
+    }
+    .courses-top-bar__selection-list{
+        @apply  absolute left-0 right-0 -bottom-[263px] w-full  shadow-category-ul text-2xl font-medium bg-white invisible opacity-0 rounded-b-2xl border-b-4 border-b-green-500 group-hover:visible group-hover:opacity-100  text-zinc-700 dark:text-white py-3.5  z-10  transition duration-300 md:mr-10
+    }
+    .courses-top-bar__selection-item{
+        @apply hover:bg-gray-300 py-4 px-6 list-none
+    }
+        .courses-top-bar__selection-item--active{
+        @apply bg-gray-300 py-4 px-6   
+    }
+    .courses-top-bar__left{
+        @apply bg-white flex items-center mt-8 w-full justify-end
+    }
+    .courses-top-bar__form {
+        @apply relative w-full md:w-96 top-0 bottom-0 my-auto 
+    }
+    .courses-top-bar__input{
+        @apply placeholder-slate-500 text-xl border border-gray-200 rounded-lg w-full  py-4 pr-6 pl-16 cursor-pointer
+    }
+    .courses-top-bar__search-icon{
+        @apply absolute top-4  left-4 text-slate-500  
+    }
+
+
+
+     /* ----Finish  courses-top-bar setting-- */
+
+    /* -------Start Breadcrumb------ */
+    .breadcrumb__content {
+        @apply flex bg-[#f0f2f7] py-6 px-8 rounded-xl
+    }
+    .breadcrumb__home-content-icon{
+        @apply flex items-center justify-center w-14 h-14 bg-white rounded-xl
+    }
+    .breadcrumb__home-icon{
+        @apply text-slate-400
+    }
+    .breadcrumb__list{
+        @apply flex  items-center mr-6
+    }
+    .breadcrumb__link{
+        @apply flex items-center text-xl sm:text-2xl text-slate-600 hover:text-blue-600
+    }
+    .breadcrumb__icon{
+        @apply  text-slate-600 text-2xl mx-1 sm:mx-3.5
+    }
+    /* -------Finish Breadcrumb------ */
+
+
+
+     /* -------Start Paragraph------ */
+     .paragraph{
+        @apply text-2xl leading-loose text-zinc-700
+     }
+
+      /* -------Finish Paragraph------ */
+
+
+    /* -------course-info-courses box5------ */
+    .course-info-courses{
+        @apply  py-9 px-9 bg-white rounded-xl shadow-category border border-gray-100 mt-4 mb-8
+    }
+    .course-info-courses-Title{
+        @apply text-3xl
+    }
+    .course-info-courses-item{
+        @apply mt-8 
+    }
+    .course-info-courses-link{
+        @apply flex items-center gap-3 w-full
+    }
+    .course-info-courses-img{
+        @apply  w-32 h-auto rounded-lg object-cover
+    }
+    .course-info-courses-text{
+        @apply inline-block  text-xl text-gray-800 font-medium
+    }
+
+
+
+    /* -------course-info-courses box5------ */
+
+
+    /* -----Start Courses content-- */
+   
+    .courses-content{
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10  
+    }
+    .course-box{
+        @apply shadow-lg transform hover:-translate-y-6 duration-300 rounded-3xl
+    }
+    .course-box__img{
+        @apply  w-full object-cover rounded-t-2xl h-auto  p-0
+    }
+    /* courses Body */
+    .course-box__main{
+        @apply p-4 mt-4
+    }
+    .course-box__title{
+        @apply text-3xl font-semibold text-gray-800 hover:text-blue-600 transition duration-300
+    }
+    .course-box__rating-teacher{
+        @apply  flex items-center justify-between mt-4
+    }
+    .course-box__teacher{
+        @apply flex items-center text-gray-600
+    }
+    .course-box__teacher-icon{
+        @apply text-3xl 
+    }
+    .course-box__teacher-link{
+        @apply  text-3xl hover:text-blue-600 transition duration-300 mr-4
+    }
+    .course-box__rating {
+        @apply flex items-center  
+    }
+    /* .course-box__star{
+        @apply w-5  h-5
+    } */
+
+    .course-box__status{
+        @apply flex justify-between items-center text-gray-600 mt-4
+    }
+    .course-box__users{
+        @apply flex items-center
+    }
+    .course-box__users-text{
+        @apply block text-3xl mr-4 
+    }
+    .course-box__price{
+        @apply text-3xl font-bold text-green-600
+    }
+    /* courses Footer */
+    .course-box__footer{
+        @apply flex items-center justify-center gap-2 py-6 border-t border-gray-200 text-green-500 text-2xl hover:text-blue-500 transition-colors duration-300
+    }
+    .course-box__footer-link{
+        @apply font-bold
+    }
+    /* -----Finish Courses content-- */
+
+
+    
+    /* -----Start Courses content row-- */
+    .courses-content-row{
+        @apply  grid grid-cols-1  gap-y-12 
+    }
+    .course-box-row{
+        @apply shadow-lg transform hover:-translate-y-3 duration-300 rounded-2xl 
+    }
+    .course-box-div-row{
+        @apply flex items-center justify-between gap-6
+    }
+    .course-box__img-row{
+        @apply  w-full object-cover rounded-r-2xl h-auto  
+    }
+    /* courses Body */
+    .course-box__main-row{
+        @apply p-4 mt-4 w-full h-full flex flex-col justify-between
+    }
+    .course-box__rating-content {
+        @apply mt-6 text-gray-600
+    }
+   
+    
+    /* -----Finish Courses content row-- */
+
+
+
+    /* -----Start Courses Pagination----- */
+    .courses-pagination-list {
+        @apply flex items-center justify-center
+    }
+    .courses-pagination-link{
+        @apply flex items-center justify-center rounded-md w-16 h-16 text-2xl  bg-gray-200 mx-2 hover:bg-green-500 hover:text-white
+    }
+    .courses-pagination-link_active{
+        @apply bg-green-500 text-white
+    }
+     /* -----Finish Courses Pagination----- */
+
+
+       /* start aleart register */
+    .swal-button-container{
+        @apply flex justify-center
+    }
+       /* Finish aleart register */
+
+     /* ---------start Footer -----*/
+     .footer-weight{
+        @apply    before:absolute before:content-[''] before:w-[500px] before:h-14 before:bg-green-500 before:-z-10 before:right-0 before:left-0 before:-bottom-6 before:mx-auto before:rounded-xl relative flex flex-wrap gap-3 justify-between rounded-3xl p-4 lg:p-14 mb-20 bg-[#f0f2f7]
+     }
+     .footer-weight{
+        @apply before:hidden lg:before:block;
+     }
+    
+     /* footer-weight Right */
+    .footer-widgets__title{
+        @apply after:absolute after:content-[''] after:w-14 after:h-14 after:bg-green-500 after:opacity-30 after:right-4 after:-top-2 after:rounded-xl after:rotate-45 relative font-semibold text-4xl  text-zinc-700 
+    }
+    .footer-widgets__text{
+@apply max-w-[440px] md:w-[356px] lg:w-[540px] text-gray-700 mt-10 
+}
+/* footer-weight center & left */
+.footer-weight-left{
+    @apply flex md:w-full xl:w-[364px] flex-col md:justify-between md:flex-row xl:flex-col xl:justify-start
+}
+.footer-widgets__links{
+@apply grid grid-cols-2 gap-x-10 md:gap-x-16 
+}
+.footer-widgets__link{
+@apply block text-2xl mt-10 hover:text-blue-500 
+}
+/* footer copyright */
+.footer__copyright{
+@apply  flex items-center justify-center  py-8 rounded-t-3xl bg-[#f0f2f7]
+}
+.footer__copyright-text{
+@apply  text-zinc-700 font-Dana text-xl
+}
+.footer-widgets__kol{
+    @apply  flex flex-col mt-6 mb-3 lg:mb-0 w-[364px] xl:w-[390px]
+    }
+
+.footer-widgets__title{
+@apply mt-8
+}
+.footer-widgets__text{
+@apply  text-right md:text-center lg:text-right mr-0
+}
+.footer-widgets__form {
+@apply  w-full mt-6 flex items-center
+}
+.footer-widgets__input{
+@apply w-full cursor-pointer border outline-none rounded-lg border-gray-100 py-4 px-6
+}
+.footer-widgets__btn{
+@apply absolute  text-white rounded-l-lg  top-0 left-0 bg-gray-700 h-full px-4
+}
+/* -------Finish Footer------- */
+}      
+
